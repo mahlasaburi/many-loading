@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+.box{
+    width: 250px;
+    height: 30px;
+    background-color: white;
+    border-radius: 40px;
+    margin: 270px auto;
+    box-shadow: 1px 1px 10px gray;
+}
+.loading{
+    width: 30px;
+    height: 30px;
+    background-color: #817f7f;
+    border-radius: 50%;
+    animation: loading 3s linear .5s infinite alternate;
+}
+@keyframes loading{
+    to{
+        transform: translate(220px);
+    }
+}
+h6{
+    font-size: 22px;
+    margin-top: -18%;
+    text-transform: capitalize;
+    text-align: center;
+    color: aliceblue;
+}

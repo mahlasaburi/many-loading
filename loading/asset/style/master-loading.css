@@ -1,0 +1,28 @@
+:root{
+    --lightpink: #f1e4f3;
+    --pink : #ff0054;
+    --black : #000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--black);
+}
+.loading{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--lightpink);
+    margin: 270px auto;
+    border-top: 1px solid var(--pink);
+    border-right: 1px solid var(--pink);
+    animation: loading 1s linear infinite forwards;
+}
+@keyframes loading{
+    to{
+        transform: rotate(360deg);
+    }
+}
