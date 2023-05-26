@@ -1,0 +1,23 @@
+:root{
+    --color-bg: #a98b9a;
+	--color-ldg: #fff;
+}
+body{
+    background-color: var(--color-bg);
+}
+.loading{
+    margin: 270px auto;
+	width: 60px;
+	height: 60px;
+	opacity: 0.4;
+	background: var(--color-ldg);
+	animation: loading 0.7s linear infinite alternate forwards;
+
+}
+
+@keyframes loading {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5,0.5,1);
+	}
+}
